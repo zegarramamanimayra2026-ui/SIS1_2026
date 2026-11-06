@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Básico - Proyecto Bimestral</title>
+    
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="../img/banner.png" alt="Banner Michelle" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <ul class="horizontal"> 
+        <li><a href="../index.html" class="dropbtn">INICIO</a></li>
+        
+        <li>
+            <a href="#" class="dropbtn">BOTONES y ALERTS</a>
+            <div class="dropdown-content">
+                <a href="../BOTONES y ALERTS/botones.html">Botones</a>
+                <a href="../BOTONES y ALERTS/alerts.html">Alerts</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#" class="dropbtn">FORMULARIOS</a>
+            <div class="dropdown-content">
+                <a href="form_basico.html">Form básico</a>
+                <a href="form_avanzado.html">Form avanzado</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#" class="dropbtn">TABLAS</a>
+            <div class="dropdown-content">
+                <a href="../TABLAS/tabla_corta.html">Tabla corta</a>
+                <a href="../TABLAS/tabla_extensa.html">Tabla extensa</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="contenido-pagina">
+        <h2>Inscripción a Taller de Desarrollo Web</h2>
+        
+        <p style="text-align: center; color: #555; margin-bottom: 20px;">Llena este formulario sencillo para reservar tu cupo en el próximo seminario de HTML5 y CSS3.</p>
+
+        <div class="contenedor-formulario">
+            <form action="#" method="post">
+                <label for="nombres">Nombre Completo:</label>
+                <input type="text" name="nombres" id="nombres" placeholder="Ej. Mayra Michelle">
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" name="correo" id="correo" placeholder="tu_correo@email.com">
+
+                <label for="nivel">Nivel de Experiencia:</label>
+                <select name="nivel" id="nivel">
+                    <option value="">Selecciona tu nivel</option>
+                    <option value="principiante">Principiante (Nunca he programado)</option>
+                    <option value="intermedio">Intermedio (Conozco lo básico)</option>
+                    <option value="avanzado">Avanzado (Busco perfeccionar)</option>
+                </select>
+                
+                <input type="submit" value="INSCRIBIRME AHORA">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

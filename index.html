@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bimestral - Inicio</title>
+    
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        .contenedor-perfil {
+            width: 80%;
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #2c3e50;
+        }
+        .seccion-foto { text-align: center; margin-bottom: 25px; }
+        .foto-perfil {
+            width: 150px; height: 150px; border-radius: 50%;
+            border: 4px solid #4a5c6e; object-fit: cover;
+        }
+        .lista-habilidades {
+            list-style-type: none; padding: 0; display: flex;
+            flex-wrap: wrap; gap: 10px; justify-content: center;
+        }
+        .habilidad {
+            background-color: #4a5c6e; color: white;
+            padding: 10px 20px; border-radius: 5px; font-size: 15px; font-weight: bold;
+        }
+        .habilidad:hover { background-color: #1a2a3a; }
+        .caja-sobre-mi {
+            background-color: #f1f3f5; border-left: 5px solid #2c3e50;
+            padding: 15px; margin-top: 20px; color: #444; line-height: 1.6;
+        }
+  
+        .formulario-contacto table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .formulario-contacto td { padding: 10px; border: none; vertical-align: middle; }
+        .formulario-contacto td:first-child { width: 25%; font-weight: bold; color: #1a2a3a; }
+        .botones-contacto { text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="img/banner.png" alt="Banner Michelle" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <ul class="horizontal"> 
+        <li><a href="index.html" class="dropbtn">INICIO</a></li>
+        
+        <li>
+            <a href="#" class="dropbtn">BOTONES y ALERTS</a>
+            <div class="dropdown-content">
+                <a href="BOTONES y ALERTS/botones.html">Botones</a>
+                <a href="BOTONES y ALERTS/alerts.html">Alerts</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#" class="dropbtn">FORMULARIOS</a>
+            <div class="dropdown-content">
+                <a href="FORMULARIOS/form_basico.html">Form básico</a>
+                <a href="FORMULARIOS/form_avanzado.html">Form avanzado</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#" class="dropbtn">TABLAS</a>
+            <div class="dropdown-content">
+                <a href="TABLAS/tabla_corta.html">Tabla corta</a>
+                <a href="TABLAS/tabla_extensa.html">Tabla extensa</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="contenido-pagina">
+        
+        <div style="background-color: #1a2a3a; color: white; text-align: center; padding: 20px; margin-bottom: 20px; border-radius: 8px;">
+            <h1 style="margin: 0; font-size: 24px;">FICHA PERSONAL</h1>
+            <p style="margin: 5px 0 0 0; color: #b0b8c1;">Trabajo Final - Diseño y Programación Web<br>PhD. Grover Marcelo Chavez Duran</p>
+        </div>
+
+        <div class="contenedor-perfil">
+            
+            <div class="seccion-foto">
+                <img src="img/yomi.jpeg" alt="Michelle" class="foto-perfil">
+                <h2 style="border:none; margin-top: 10px;">Mayra Michelle Zegarra Mamani</h2>
+            </div>
+
+            <div class="caja-sobre-mi">
+                <strong>¡Hola!</strong> Mi nombre es Michelle soy una apasionada por el arte y el aprendizaje continuo, vivo en la hermosa ciudad de La Paz, Bolivia. Mi motor principal es mi familia, conformada por mis padres y mi hermanito. Fuera del mundo académico y profesional, me encantan los animales, especialmente los <strong>gatos y los pollitos</strong>.
+            </div>
+
+            <h2>Información Personal</h2>
+            <div class="responsive">
+                <table>
+                    <tr>
+                        <th>Formación Actual</th>
+                        <td>Sistemas Informáticos (INCOS)</td>
+                    </tr>
+                    <tr>
+                        <th>Formación Previa</th>
+                        <td>Administración de Empresas</td>
+                    </tr>
+                    <tr>
+                        <th>Ubicación</th>
+                        <td>La Paz, Bolivia</td>
+                    </tr>
+                    <tr>
+                        <th>Teléfono</th>
+                        <td>+591 73550607</td>
+                    </tr>
+                    <tr>
+                        <th>Correo Electrónico</th>
+                        <td>mishellgarra@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>Habilidades Personales</h2>
+            <ul class="lista-habilidades">
+                <li class="habilidad">Perseverante</li>
+                <li class="habilidad">Responsable</li>
+                <li class="habilidad">Organizada</li>
+                <li class="habilidad">Curiosa</li>
+                <li class="habilidad">Creativa</li>
+                <li class="habilidad">Resiliente</li>
+                <li class="habilidad">Determinada</li>
+                <li class="habilidad">Solidaria</li>
+                <li class="habilidad">Trabajadora</li>
+                <li class="habilidad">Sensible</li>
+                <li class="habilidad">Comprometida</li>
+                <li class="habilidad">Graciosa</li>
+            </ul>
+
+            <h2>Contáctame</h2>
+            <div class="formulario-contacto">
+                <form action="#" method="get">
+                    <table>
+                        <tr>
+                            <td>Nombre Completo:</td>
+                            <td><input type="text" name="nombre" required placeholder="Ingresa tu nombre"></td>
+                        </tr>
+                        <tr>
+                            <td>Correo Electrónico:</td>
+                            <td><input type="email" name="correo" required placeholder="Ingresa tu correo @gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <td>Departamento:</td>
+                            <td>
+                                <select name="departamento" required>
+                                    <option value="">Selecciona tu departamento de residencia</option>
+                                    <option value="LP">La Paz</option>
+                                    <option value="OR">Oruro</option>
+                                    <option value="PT">Potosí</option>
+                                    <option value="CB">Cochabamba</option>
+                                    <option value="CH">Chuquisaca</option>
+                                    <option value="TJ">Tarija</option>
+                                    <option value="SC">Santa Cruz</option>
+                                    <option value="BN">Beni</option>
+                                    <option value="PN">Pando</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mensaje:</td>
+                            <td><textarea rows="4" name="mensaje" required placeholder="Escribe tu mensaje aquí..."></textarea></td>
+                        </tr>
+                    </table>
+                    <div class="botones-contacto">
+                        <input type="submit" value="ENVIAR MENSAJE" style="width: auto; display: inline-block;">
+                        <input type="reset" value="LIMPIAR" style="width: auto; display: inline-block; background-color: #7f8c8d;">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

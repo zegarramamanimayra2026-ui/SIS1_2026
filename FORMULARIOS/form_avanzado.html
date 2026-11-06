@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Avanzado - Proyecto Bimestral</title>
+    
+    <link rel="stylesheet" href="../css/estilos.css">
+
+
+    <style>
+        .tabla-avanzada {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .tabla-avanzada td {
+            padding: 12px;
+            border: 1px solid #d1d5da;
+            vertical-align: middle;
+        }
+
+        .tabla-avanzada td.columna-etiqueta {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            width: 35%;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .tabla-avanzada td.columna-input {
+            background-color: #f8f9fa;
+        }
+
+        .tabla-avanzada input[type="radio"], 
+        .tabla-avanzada input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .tabla-avanzada label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="../img/banner.png" alt="Banner Michelle" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <ul class="horizontal"> 
+        <li><a href="../index.html" class="dropbtn">INICIO</a></li>
+        
+        <li>
+            <a href="#" class="dropbtn">BOTONES y ALERTS</a>
+            <div class="dropdown-content">
+                <a href="../BOTONES y ALERTS/botones.html">Botones</a>
+                <a href="../BOTONES y ALERTS/alerts.html">Alerts</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#" class="dropbtn">FORMULARIOS</a>
+            <div class="dropdown-content">
+                <a href="form_basico.html">Form básico</a>
+                <a href="form_avanzado.html">Form avanzado</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#" class="dropbtn">TABLAS</a>
+            <div class="dropdown-content">
+                <a href="../TABLAS/tabla_corta.html">Tabla corta</a>
+                <a href="../TABLAS/tabla_extensa.html">Tabla extensa</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="contenido-pagina">
+        <h2>Registro de Proyecto de Sistemas</h2>
+
+        <p style="text-align: center; color: #555; margin-bottom: 20px;">Por favor, completa todos los campos detallados a continuación para registrar tu proyecto final en el sistema académico.</p>
+
+        <div class="responsive" style="max-width: 850px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-top: 5px solid #4a5c6e;">
+            <form action="#" method="get">
+                <table class="tabla-avanzada">
+                    <tr>
+                        <td class="columna-etiqueta">NOMBRE DEL ESTUDIANTE:</td>
+                        <td class="columna-input"><input type="text" name="nombre" placeholder="Nombres y Apellidos"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">MODALIDAD DE ESTUDIO:</td>
+                        <td class="columna-input">  
+                            <label><input type="radio" name="modalidad"> Presencial</label>  
+                            <label><input type="radio" name="modalidad"> Virtual</label>  
+                        </td>        
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">SEDE ACADÉMICA (CIUDAD):</td>
+                        <td class="columna-input">  
+                            <select name="ciudad">
+                                <option value="LP">La Paz (Sede Central)</option>
+                                <option value="CB">Cochabamba</option>
+                                <option value="SC">Santa Cruz</option>
+                                <option value="OR">Oruro</option>
+                            </select>
+                        </td>        
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">LENGUAJES UTILIZADOS:</td>
+                        <td class="columna-input">  
+                            <label><input type="checkbox" name="lenguajes"> HTML5</label> 
+                            <label><input type="checkbox" name="lenguajes"> CSS3</label> 
+                            <label><input type="checkbox" name="lenguajes"> JavaScript</label>  
+                            <label><input type="checkbox" name="lenguajes"> PHP</label> 
+                        </td>        
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">FECHA DE ENTREGA:</td>
+                        <td class="columna-input"><input type="date" name="fecha_entrega"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">PUNTUACIÓN ESPERADA (0-100):</td>
+                        <td class="columna-input"><input type="number" name="nota" min="0" max="100" placeholder="Ej. 95"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">PRESUPUESTO DEL PROYECTO (Bs):</td>
+                        <td class="columna-input"><input type="number" name="presupuesto" min="0" step="0.50" placeholder="0.00"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">CORREO INSTITUCIONAL:</td>
+                        <td class="columna-input"><input type="email" name="correo" required placeholder="estudiante@incos.edu.bo"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">HORA DE DEFENSA:</td>
+                        <td class="columna-input"><input type="time" name="hora_defensa"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">NIVEL DE DIFICULTAD:</td>
+                        <td class="columna-input">
+                            <small style="color: #666; display: block; margin-bottom: 5px;">Bajo -------------------------------------------- Alto</small>
+                            <input type="range" name="dificultad" min="0" max="100" style="width: 100%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">DESCRIPCIÓN DEL SISTEMA:</td>
+                        <td class="columna-input"><textarea rows="4" name="descripcion" placeholder="Explica brevemente la función de tu proyecto..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">COLOR PRINCIPAL DEL DISEÑO:</td>
+                        <td class="columna-input"><input type="color" name="color_tema" style="height: 40px; padding: 2px; cursor: pointer;"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-etiqueta">ADJUNTAR ARCHIVO (.zip):</td>
+                        <td class="columna-input"><input type="file" accept=".zip,.rar,.pdf" name="archivo_proyecto" style="padding: 5px;"></td>
+                    </tr>
+                </table>
+                
+                <div style="text-align: center; margin-top: 25px;">
+                    <input type="submit" value="REGISTRAR PROYECTO" style="width: auto; padding: 12px 30px; display: inline-block;">
+                    <input type="reset" value="LIMPIAR DATOS" style="width: auto; padding: 12px 30px; display: inline-block; background-color: #7f8c8d; border: 1px solid #6c7a7d;">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
